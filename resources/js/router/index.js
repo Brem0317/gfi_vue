@@ -4,8 +4,8 @@ import {createWebHistory, createRouter} from "vue-router";
 import Home from '../pages/Home';
 import Register from '../pages/Register';
 import Login from '../pages/Login';
-import Dashboard from '../pages/Dashboard';
-import Posts from '../components/Posts';
+import HistoryLog from '../pages/HistoryLog';
+import SlipCreate from '../pages/SlipCreate';
 import EditPost from '../components/EditPost';
 import AddPost from '../components/AddPost';
 
@@ -26,14 +26,14 @@ export const routes = [
         component: Login
     },
     {
-        name: 'dashboard',
-        path: '/dashboard',
-        component: Dashboard
+        name: 'history-log',
+        path: '/history-log',
+        component: HistoryLog
     },
     {
-        name: 'posts',
-        path: '/posts',
-        component: Posts
+        name: 'slip-create',
+        path: '/slip-create',
+        component: SlipCreate
     },
     {
         name: 'addpost',
